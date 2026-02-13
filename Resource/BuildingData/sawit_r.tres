@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SawitData" format=3 uid="uid://bjjtet1lj24ua"]
+
+[ext_resource type="PackedScene" uid="uid://bltq02waum6x1" path="res://Scene/building.tscn" id="1_8p70e"]
+[ext_resource type="Script" uid="uid://douxbys23we8k" path="res://Resource/BuildingData/sawit_data.gd" id="1_m2uns"]
+
+[resource]
+script = ExtResource("1_m2uns")
+growth_needed = 3
+building_name = "Sawit R"
+metadata/_custom_type_script = "uid://douxbys23we8k"

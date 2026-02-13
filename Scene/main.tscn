@@ -1,0 +1,391 @@
+[gd_scene format=4 uid="uid://mtdaix806qc8"]
+
+[ext_resource type="Script" uid="uid://c8uukme7qtlfw" path="res://grid.gd" id="1_itxqv"]
+[ext_resource type="Script" uid="uid://ddlkirsfxu75k" path="res://Scene/main.gd" id="1_v0l8b"]
+[ext_resource type="Script" uid="uid://codcb75s72wqp" path="res://Util/placement_control.gd" id="3_0ha60"]
+[ext_resource type="Script" uid="uid://66rokdc2x4en" path="res://Util/main_camera.gd" id="3_brvut"]
+[ext_resource type="Script" uid="uid://bt7vj3kx18wyc" path="res://UI/right_ui.gd" id="3_c2iwn"]
+[ext_resource type="Texture2D" uid="uid://v4ix8y0bm7ii" path="res://Assets/Tilemap/MasterSimple.png" id="4_1xcnr"]
+[ext_resource type="Script" uid="uid://c88b8337571hd" path="res://UI/Inventory/inventory.gd" id="5_4j5ol"]
+[ext_resource type="PackedScene" uid="uid://bltq02waum6x1" path="res://Scene/building.tscn" id="7_ow1sv"]
+[ext_resource type="Resource" uid="uid://bjjtet1lj24ua" path="res://Resource/BuildingData/sawit_r.tres" id="8_75buv"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ow1sv"]
+texture = ExtResource("4_1xcnr")
+0:0/0 = 0
+0:0/0/terrain_set = 0
+0:0/0/terrain = 0
+0:0/0/terrains_peering_bit/right_side = 0
+0:0/0/terrains_peering_bit/bottom_right_corner = 0
+0:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/right_side = 0
+1:0/0/terrains_peering_bit/bottom_right_corner = 0
+1:0/0/terrains_peering_bit/bottom_side = 0
+1:0/0/terrains_peering_bit/bottom_left_corner = 0
+1:0/0/terrains_peering_bit/left_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/bottom_side = 0
+2:0/0/terrains_peering_bit/bottom_left_corner = 0
+2:0/0/terrains_peering_bit/left_side = 0
+3:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 0
+3:0/0/terrains_peering_bit/bottom_side = 0
+3:0/0/terrains_peering_bit/top_side = 0
+3:0/0/terrains_peering_bit/top_right_corner = 0
+4:0/0 = 0
+4:0/0/terrain_set = 0
+4:0/0/terrain = 0
+4:0/0/terrains_peering_bit/bottom_side = 0
+4:0/0/terrains_peering_bit/top_left_corner = 0
+4:0/0/terrains_peering_bit/top_side = 0
+5:0/0 = 0
+5:0/0/terrain_set = 0
+5:0/0/terrain = 0
+5:0/0/terrains_peering_bit/bottom_side = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+0:1/0 = 0
+0:1/0/terrain_set = 0
+0:1/0/terrain = 0
+0:1/0/terrains_peering_bit/right_side = 0
+0:1/0/terrains_peering_bit/bottom_right_corner = 0
+0:1/0/terrains_peering_bit/bottom_side = 0
+0:1/0/terrains_peering_bit/top_side = 0
+0:1/0/terrains_peering_bit/top_right_corner = 0
+1:1/0 = 0
+1:1/0/terrain_set = 0
+1:1/0/terrain = 0
+1:1/0/terrains_peering_bit/right_side = 0
+1:1/0/terrains_peering_bit/bottom_right_corner = 0
+1:1/0/terrains_peering_bit/bottom_side = 0
+1:1/0/terrains_peering_bit/bottom_left_corner = 0
+1:1/0/terrains_peering_bit/left_side = 0
+1:1/0/terrains_peering_bit/top_left_corner = 0
+1:1/0/terrains_peering_bit/top_side = 0
+1:1/0/terrains_peering_bit/top_right_corner = 0
+2:1/0 = 0
+2:1/0/terrain_set = 0
+2:1/0/terrain = 0
+2:1/0/terrains_peering_bit/bottom_side = 0
+2:1/0/terrains_peering_bit/bottom_left_corner = 0
+2:1/0/terrains_peering_bit/left_side = 0
+2:1/0/terrains_peering_bit/top_left_corner = 0
+2:1/0/terrains_peering_bit/top_side = 0
+3:1/0 = 0
+3:1/0/terrain_set = 0
+3:1/0/terrain = 0
+3:1/0/terrains_peering_bit/bottom_side = 0
+3:1/0/terrains_peering_bit/top_left_corner = 0
+3:1/0/terrains_peering_bit/top_side = 0
+3:1/0/terrains_peering_bit/top_right_corner = 0
+5:1/0 = 0
+5:1/0/terrain_set = 0
+5:1/0/terrain = 0
+5:1/0/terrains_peering_bit/bottom_side = 0
+5:1/0/terrains_peering_bit/top_side = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+0:2/0 = 0
+0:2/0/terrain_set = 0
+0:2/0/terrain = 0
+0:2/0/terrains_peering_bit/right_side = 0
+0:2/0/terrains_peering_bit/bottom_right_corner = 0
+0:2/0/terrains_peering_bit/bottom_side = 0
+0:2/0/terrains_peering_bit/top_side = 0
+0:2/0/terrains_peering_bit/top_right_corner = 0
+1:2/0 = 0
+1:2/0/terrain_set = 0
+1:2/0/terrain = 0
+1:2/0/terrains_peering_bit/right_side = 0
+1:2/0/terrains_peering_bit/bottom_right_corner = 0
+1:2/0/terrains_peering_bit/bottom_side = 0
+1:2/0/terrains_peering_bit/bottom_left_corner = 0
+1:2/0/terrains_peering_bit/left_side = 0
+1:2/0/terrains_peering_bit/top_left_corner = 0
+1:2/0/terrains_peering_bit/top_side = 0
+1:2/0/terrains_peering_bit/top_right_corner = 0
+2:2/0 = 0
+2:2/0/terrain_set = 0
+2:2/0/terrain = 0
+2:2/0/terrains_peering_bit/bottom_side = 0
+2:2/0/terrains_peering_bit/bottom_left_corner = 0
+2:2/0/terrains_peering_bit/left_side = 0
+2:2/0/terrains_peering_bit/top_left_corner = 0
+2:2/0/terrains_peering_bit/top_side = 0
+3:2/0 = 0
+3:2/0/terrain_set = 0
+3:2/0/terrain = 0
+3:2/0/terrains_peering_bit/bottom_side = 0
+3:2/0/terrains_peering_bit/bottom_left_corner = 0
+3:2/0/terrains_peering_bit/left_side = 0
+3:2/0/terrains_peering_bit/top_left_corner = 0
+3:2/0/terrains_peering_bit/top_side = 0
+3:2/0/terrains_peering_bit/top_right_corner = 0
+4:2/0 = 0
+4:2/0/terrain_set = 0
+4:2/0/terrain = 0
+4:2/0/terrains_peering_bit/right_side = 0
+4:2/0/terrains_peering_bit/bottom_right_corner = 0
+4:2/0/terrains_peering_bit/bottom_side = 0
+4:2/0/terrains_peering_bit/top_left_corner = 0
+4:2/0/terrains_peering_bit/top_side = 0
+4:2/0/terrains_peering_bit/top_right_corner = 0
+5:2/0 = 0
+5:2/0/terrain_set = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+3:3/0/terrain_set = 0
+4:3/0 = 0
+4:3/0/terrain_set = 0
+5:3/0 = 0
+5:3/0/terrain_set = 0
+5:3/0/terrains_peering_bit/top_side = 0
+6:3/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+10:3/0 = 0
+11:3/0 = 0
+12:3/0 = 0
+13:3/0 = 0
+14:3/0 = 0
+15:3/0 = 0
+0:4/0 = 0
+0:4/0/terrain_set = 0
+0:4/0/terrains_peering_bit/top_side = 0
+0:4/0/terrains_peering_bit/top_right_corner = 0
+1:4/0 = 0
+1:4/0/terrain_set = 0
+1:4/0/terrains_peering_bit/top_left_corner = 0
+1:4/0/terrains_peering_bit/top_side = 0
+1:4/0/terrains_peering_bit/top_right_corner = 0
+2:4/0 = 0
+2:4/0/terrain_set = 0
+2:4/0/terrains_peering_bit/top_left_corner = 0
+2:4/0/terrains_peering_bit/top_side = 0
+3:4/0 = 0
+4:4/0 = 0
+5:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+11:4/0 = 0
+12:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+11:5/0 = 0
+12:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+3:6/0 = 0
+4:6/0 = 0
+5:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+9:6/0 = 0
+10:6/0 = 0
+11:6/0 = 0
+12:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+5:8/0 = 0
+6:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+3:10/0 = 0
+4:10/0 = 0
+5:10/0 = 0
+6:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_0ha60"]
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "GrassWater"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/0 = SubResource("TileSetAtlasSource_ow1sv")
+
+[node name="Main" type="Node2D" unique_id=329482127]
+script = ExtResource("1_v0l8b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1028981232]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=1189446978]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Inventory" type="Panel" parent="CanvasLayer/Control" unique_id=912082089]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -358.0
+offset_top = -106.0
+offset_right = 358.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("5_4j5ol")
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/Inventory" unique_id=620623907]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -5.0
+offset_right = 5.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="GridContainer" type="HBoxContainer" parent="CanvasLayer/Control/Inventory/MarginContainer" unique_id=1120658971]
+layout_mode = 2
+theme_override_constants/separation = 7
+alignment = 1
+
+[node name="rightUI" type="Panel" parent="CanvasLayer/Control" unique_id=612246725]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+grow_horizontal = 0
+grow_vertical = 0
+script = ExtResource("3_c2iwn")
+
+[node name="EndDayButton" type="Button" parent="CanvasLayer/Control/rightUI" unique_id=1260025783]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -143.0
+offset_top = -52.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "End Day"
+
+[node name="CashLabel" type="Label" parent="CanvasLayer/Control/rightUI" unique_id=772629139]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -140.0
+offset_top = -104.0
+offset_right = -2.0
+offset_bottom = -58.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TileMap" type="TileMap" parent="." unique_id=984451009]
+scale = Vector2(8, 8)
+tile_set = SubResource("TileSet_0ha60")
+format = 2
+
+[node name="GroundLayer" type="TileMapLayer" parent="TileMap" unique_id=1290161481]
+use_parent_material = true
+tile_map_data = PackedByteArray("AAAMAAUAAAABAAEAAAAMAAMAAAABAAEAAAAMAAIAAAACAAAAAAALAAUAAAABAAIAAAALAAQAAAABAAIAAAALAAMAAAABAAEAAAALAAIAAAABAAAAAAAKAAUAAAABAAIAAAAKAAQAAAABAAEAAAAKAAMAAAABAAIAAAAKAAIAAAABAAAAAAAJAAUAAAABAAIAAAAJAAQAAAABAAIAAAAJAAMAAAABAAEAAAAJAAIAAAABAAAAAAAIAAUAAAABAAEAAAAIAAQAAAABAAEAAAAIAAMAAAABAAEAAAAIAAIAAAABAAAAAAAHAAUAAAABAAIAAAAHAAQAAAABAAEAAAAHAAMAAAABAAIAAAAHAAIAAAABAAAAAAAGAAUAAAABAAIAAAAGAAQAAAABAAEAAAAGAAMAAAABAAEAAAAGAAIAAAAAAAAAAAAHAAYAAAABAAIAAAAGAAYAAAABAAEAAAAIAAYAAAABAAIAAAAJAAYAAAABAAIAAAAKAAYAAAABAAEAAAALAAYAAAABAAIAAAAMAAYAAAABAAEAAAANAAQAAAABAAIAAAANAAUAAAABAAIAAAAOAAQAAAABAAIAAAAOAAUAAAABAAEAAAAPAAQAAAABAAEAAAAPAAUAAAABAAEAAAAPAAYAAAABAAIAAAAPAAcAAAABAAIAAAAQAAYAAAABAAEAAAAQAAcAAAABAAIAAAAQAAUAAAABAAIAAAARAAUAAAABAAIAAAARAAYAAAABAAIAAAASAAUAAAABAAEAAAASAAYAAAABAAEAAAASAAQAAAABAAEAAAATAAQAAAABAAIAAAATAAUAAAABAAEAAAAUAAQAAAABAAIAAAAUAAUAAAABAAIAAAAVAAQAAAABAAEAAAAVAAUAAAABAAEAAAAWAAQAAAABAAIAAAAWAAUAAAABAAEAAAAXAAQAAAABAAAAAAAXAAUAAAABAAIAAAAWAAMAAAACAAAAAAAVAAMAAAABAAAAAAAUAAMAAAABAAAAAAATAAMAAAABAAIAAAASAAMAAAABAAIAAAASAAIAAAACAAAAAAARAAIAAAABAAAAAAARAAMAAAABAAEAAAAQAAIAAAABAAAAAAAQAAMAAAABAAEAAAAPAAIAAAAAAAAAAAAPAAMAAAABAAIAAAAOAAMAAAABAAAAAAANAAMAAAABAAAAAAAMAAQAAAABAAIAAAALAAcAAAABAAIAAAALAAgAAAABAAEAAAAMAAcAAAABAAIAAAAMAAgAAAABAAIAAAAMAAkAAAABAAQAAAANAAgAAAABAAEAAAANAAkAAAABAAQAAAAOAAgAAAABAAEAAAAOAAkAAAABAAQAAAAPAAgAAAABAAIAAAAPAAkAAAAEAAIAAAAQAAgAAAABAAEAAAAQAAkAAAABAAEAAAARAAgAAAABAAEAAAARAAkAAAABAAEAAAASAAgAAAABAAEAAAASAAkAAAABAAEAAAATAAgAAAABAAEAAAATAAkAAAABAAIAAAATAAcAAAABAAEAAAAUAAcAAAABAAEAAAAUAAgAAAABAAIAAAAUAAYAAAABAAIAAAAVAAYAAAABAAIAAAAVAAcAAAABAAEAAAAWAAYAAAABAAIAAAAWAAcAAAABAAEAAAAWAAgAAAABAAIAAAAXAAcAAAABAAEAAAAXAAgAAAADAAIAAAAXAAYAAAABAAIAAAAYAAYAAAABAAEAAAAYAAcAAAADAAIAAAAZAAYAAAACAAAAAAAZAAcAAAACAAQAAAAYAAgAAAACAAQAAAAYAAUAAAACAAEAAAAYAAQAAAACAAAAAAAFAAMAAAAAAAAAAAAFAAQAAAAAAAIAAAAFAAUAAAAAAAIAAAAFAAYAAAAAAAEAAAAFAAcAAAAAAAQAAAAGAAcAAAAEAAIAAAAGAAgAAAAAAAQAAAAHAAcAAAABAAEAAAAHAAgAAAABAAQAAAAIAAcAAAABAAEAAAAIAAgAAAABAAQAAAAJAAgAAAAEAAIAAAAJAAkAAAADAAAAAAAKAAgAAAABAAEAAAAKAAkAAAABAAQAAAALAAkAAAABAAQAAAAPAAoAAAABAAIAAAAQAAoAAAABAAEAAAARAAoAAAABAAIAAAASAAoAAAABAAEAAAATAAoAAAABAAEAAAATAAsAAAAEAAIAAAAUAAoAAAABAAIAAAAUAAsAAAABAAIAAAAVAAoAAAABAAEAAAAVAAsAAAABAAIAAAAVAAkAAAABAAEAAAAVAAgAAAABAAIAAAAUAAkAAAABAAIAAAASAAcAAAABAAIAAAARAAcAAAABAAEAAAAOAAcAAAABAAIAAAANAAcAAAABAAIAAAAKAAcAAAABAAEAAAAJAAcAAAABAAEAAAANAAYAAAABAAIAAAAOAAYAAAABAAEAAAAQAAQAAAABAAEAAAARAAQAAAABAAIAAAATAAYAAAABAAEAAAAWAAkAAAABAAIAAAAXAAkAAAABAAEAAAAXAAoAAAABAAIAAAAYAAkAAAACAAAAAAAYAAoAAAABAAIAAAAYAAsAAAABAAQAAAAZAAoAAAABAAAAAAAZAAsAAAABAAQAAAAaAAoAAAACAAAAAAAaAAsAAAAEAAAAAAAaAAwAAAAFAAMAAAAXAAsAAAABAAQAAAAWAAoAAAABAAIAAAAWAAsAAAADAAIAAAAWAAwAAAACAAQAAAAVAAwAAAABAAQAAAAUAAwAAAABAAQAAAATAAwAAAAAAAQAAAASAAsAAAABAAQAAAARAAsAAAADAAIAAAAQAAsAAAABAAIAAAAPAAsAAAABAAIAAAAOAAoAAAAAAAAAAAAOAAsAAAABAAIAAAAOAAwAAAABAAIAAAANAAsAAAABAAAAAAANAAwAAAABAAIAAAAMAAsAAAAAAAAAAAAMAAwAAAABAAEAAAALAAwAAAABAAAAAAALAA0AAAABAAQAAAAKAAwAAAABAAIAAAAKAA0AAAABAAQAAAAJAAwAAAABAAEAAAAJAA0AAAABAAQAAAAIAAwAAAAAAAAAAAAIAA0AAAAAAAQAAAAMAA0AAAABAAQAAAANAA0AAAABAAQAAAAOAA0AAAABAAQAAAAPAAwAAAABAAEAAAAPAA0AAAAEAAIAAAAPAA4AAAAAAAQAAAAQAA0AAAABAAIAAAAQAA4AAAAEAAIAAAARAA0AAAACAAIAAAARAA4AAAABAAIAAAARAAwAAAACAAEAAAAQAAwAAAABAAIAAAAJAAoAAAAAAAEAAAAJAAsAAAAAAAIAAAAKAAsAAAABAAAAAAAVAA4AAAAAAAAAAAAVAA8AAAABAAEAAAAWAA4AAAABAAAAAAAWAA8AAAABAAIAAAAXAA4AAAABAAAAAAAXAA8AAAABAAIAAAAYAA4AAAABAAAAAAAYAA8AAAABAAEAAAAZAA4AAAABAAEAAAAZAA8AAAABAAEAAAAZABAAAAABAAEAAAAaAA8AAAABAAIAAAAaABAAAAABAAIAAAAbAA8AAAADAAIAAAAbABAAAAACAAEAAAAbABEAAAACAAQAAAAaABEAAAABAAQAAAAZABEAAAABAAQAAAAYABAAAAAEAAIAAAAYABEAAAADAAIAAAAYABIAAAACAAQAAAAXABEAAAABAAAAAAAXABIAAAABAAQAAAAWABEAAAABAAAAAAAWABIAAAABAAQAAAAVABEAAAABAAIAAAAVABIAAAABAAQAAAAUABEAAAAEAAIAAAAUABIAAAAAAAQAAAAUABAAAAABAAEAAAAVABAAAAADAAIAAAAWABAAAAABAAQAAAAXABAAAAABAAQAAAAaAA4AAAABAAIAAAAbAA4AAAABAAIAAAAcAA4AAAABAAEAAAAcAA8AAAABAAQAAAAcAA0AAAABAAEAAAAdAA0AAAACAAIAAAAdAA4AAAABAAIAAAAdAAwAAAADAAIAAAAdAAsAAAABAAIAAAAeAAsAAAACAAIAAAAeAAwAAAACAAQAAAAeAAoAAAADAAIAAAAdAAoAAAAAAAAAAAAcAAsAAAAAAAAAAAAcAAwAAAABAAEAAAAbAAwAAAAAAAAAAAAbAA0AAAABAAIAAAAaAA0AAAABAAAAAAAZAA0AAAAAAAAAAAAUAA8AAAABAAAAAAATAA8AAAABAAIAAAATABAAAAABAAIAAAASAA8AAAAEAAIAAAASABAAAAABAAEAAAASABEAAAABAAQAAAARABAAAAABAAEAAAARABEAAAABAAQAAAAQABAAAAABAAAAAAAQABEAAAADAAIAAAAPABAAAAAAAAAAAAAPABEAAAAAAAEAAAAPABIAAAAAAAQAAAAQABIAAAACAAQAAAATABEAAAABAAQAAAATAA4AAAACAAAAAAASAA4AAAABAAAAAAARAA8AAAABAAQAAAAQAA8AAAAAAAQAAAAdAA8AAAABAAQAAAAeAA4AAAABAAAAAAAeAA8AAAABAAQAAAAfAA4AAAABAAAAAAAfAA8AAAABAAQAAAAgAA4AAAABAAAAAAAgAA8AAAABAAQAAAAhAA4AAAABAAAAAAAhAA8AAAADAAEAAAAiAA4AAAABAAAAAAAiAA8AAAABAAQAAAAjAA4AAAABAAAAAAAjAA8AAAADAAEAAAAkAA4AAAABAAAAAAAkAA8AAAABAAQAAAAlAA4AAAACAAAAAAAlAA8AAAAEAAAAAAAlABAAAAAFAAEAAAAlABEAAAACAAEAAAAlABIAAAACAAIAAAAlABMAAAACAAQAAAAjABAAAAAFAAEAAAAjABEAAAAAAAIAAAAjABIAAAABAAIAAAAjABMAAAABAAQAAAAhABAAAAAFAAEAAAAhABEAAAAFAAEAAAAhABIAAAABAAIAAAAhABMAAAABAAQAAAAfABIAAAAAAAAAAAAfABMAAAAAAAQAAAAgABIAAAABAAAAAAAgABMAAAABAAQAAAAiABIAAAABAAAAAAAiABMAAAABAAQAAAAkABIAAAABAAEAAAAkABMAAAABAAQAAAAkABEAAAABAAAAAAAeAAkAAAAAAAAAAAAfAAkAAAADAAIAAAAfAAoAAAACAAQAAAAfAAgAAAAAAAIAAAAfAAcAAAAEAAIAAAAgAAcAAAABAAEAAAAgAAgAAAABAAIAAAAgAAYAAAABAAAAAAAfAAYAAAABAAAAAAAeAAYAAAABAAAAAAAeAAcAAAABAAQAAAAdAAYAAAAAAAEAAAAdAAcAAAAAAAQAAAAdAAUAAAADAAAAAAAdAAQAAAAAAAAAAAAeAAQAAAABAAAAAAAeAAUAAAABAAQAAAAfAAQAAAABAAAAAAAfAAUAAAABAAQAAAAgAAQAAAABAAAAAAAgAAUAAAABAAQAAAAhAAQAAAABAAAAAAAhAAUAAAABAAQAAAAiAAQAAAACAAAAAAAiAAUAAAAEAAIAAAAiAAYAAAAAAAQAAAAjAAUAAAABAAAAAAAjAAYAAAABAAQAAAAkAAUAAAACAAAAAAAkAAYAAAAEAAAAAAAkAAcAAAACAAIAAAAkAAgAAAACAAQAAAAjAAcAAAABAAAAAAAjAAgAAAABAAQAAAAiAAcAAAABAAAAAAAiAAgAAAADAAIAAAAhAAcAAAABAAEAAAAhAAgAAAABAAEAAAAgAAkAAAABAAQAAAAhAAkAAAAEAAIAAAAhAAoAAAAAAAQAAAAiAAkAAAACAAIAAAAiAAoAAAACAAQAAAAhAAYAAAABAAAAAAA=")
+tile_set = SubResource("TileSet_0ha60")
+
+[node name="Grid" type="Node2D" parent="." unique_id=729688473]
+script = ExtResource("1_itxqv")
+show_debug = true
+
+[node name="Buildings" type="Node2D" parent="." unique_id=1078877126]
+
+[node name="Building" parent="Buildings" unique_id=873281787 instance=ExtResource("7_ow1sv")]
+position = Vector2(839, 325)
+data = ExtResource("8_75buv")
+
+[node name="PlacementControl" type="Node2D" parent="." unique_id=1775338481 node_paths=PackedStringArray("grid")]
+position = Vector2(840, 502)
+script = ExtResource("3_0ha60")
+grid = NodePath("../Grid")
+
+[node name="MainCamera" type="Camera2D" parent="." unique_id=1050136735]
+position = Vector2(-9, 3)
+script = ExtResource("3_brvut")
+
+[connection signal="pressed" from="CanvasLayer/Control/rightUI/EndDayButton" to="CanvasLayer/Control/rightUI" method="_on_end_day_button_pressed"]

@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://cncgvnhhytcrx"]
+
+[ext_resource type="Script" uid="uid://cste6sotxsb6v" path="res://UI/Inventory/card.gd" id="1_w0hky"]
+[ext_resource type="Resource" uid="uid://bjjtet1lj24ua" path="res://Resource/BuildingData/sawit_r.tres" id="2_a7tj7"]
+[ext_resource type="Texture2D" uid="uid://bb1cr7wjgoo42" path="res://icon.svg" id="2_kstv7"]
+
+[node name="Card" type="Control" unique_id=1501000614]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w0hky")
+building_data = ExtResource("2_a7tj7")
+
+[node name="Panel" type="Panel" parent="." unique_id=352671755]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1035397895]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_kstv7")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1313569924]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -28.0
+offset_top = -56.0
+offset_right = 30.0
+offset_bottom = -33.0
+grow_horizontal = 2
+grow_vertical = 2

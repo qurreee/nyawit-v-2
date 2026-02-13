@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bltq02waum6x1"]
+
+[ext_resource type="Script" uid="uid://bhgvn7ew2qvpc" path="res://Scene/building.gd" id="1_8saja"]
+[ext_resource type="Texture2D" uid="uid://bb1cr7wjgoo42" path="res://icon.svg" id="2_p48t8"]
+
+[node name="Building" type="Node2D" unique_id=873281787]
+script = ExtResource("1_8saja")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=745710520]
+position = Vector2(64, 64)
+texture = ExtResource("2_p48t8")
+
+[node name="Label" type="Label" parent="." unique_id=1711907378]
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = -25.0
+offset_right = 109.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
